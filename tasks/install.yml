@@ -1,0 +1,9 @@
+---
+
+- name: Adding sources
+  command: curl -s https://packagecloud.io/install/repositories/foomo/content-server/script.deb.sh | sudo bash
+  args:
+    creates: /etc/apt/sources.list.d/foomo_content-server.list
+
+- name: Installing package
+  action: "{{ ansible_pkg_mgr }} pkg={{ foomo_content_server_package }} state=present"
