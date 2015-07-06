@@ -1,5 +1,7 @@
 # Ansible Content server Role
 
+[![Build Status](https://travis-ci.org/foomo/ansible-role-content-server.png?branch=master)](https://travis-ci.org/foomo/ansible-role-content-server)
+
 > `content-server` is an [ansible](http://www.ansible.com) role which:
 >
 > * installs content-server
@@ -21,7 +23,7 @@ Using `requirements.yml`:
 Using `git`:
 
 ```
-$ git clone https://github.com/weareinteractive/ansible-content-server.git foomo.content-server
+$ git clone https://github.com/foomo/ansible-content-server.git foomo.content-server
 ```
 
 ## Dependencies
@@ -55,7 +57,7 @@ These are the handlers that are defined in `handlers/main.yml`.
 ## Testing
 
 ```
-$ git clone https://github.com/weareinteractive/ansible-content-server.git
+$ git clone https://github.com/foomo/ansible-role-content-serverserver.git
 $ cd ansible-content-server
 $ vagrant up
 ```
